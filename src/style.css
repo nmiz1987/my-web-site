@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "MD Primer Bold", Rubik, Lato, "Lucida Grande",
+		"Lucida Sans Unicode", Tahoma, Sans-Serif;
+	padding: 0;
+	margin: 0;
+	background-color: #1f1f1f;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.page-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	background-image: url("./img/background-picture.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+nav {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 90vw;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	font-size: 1.3em;
+	border: 2px solid rgb(160, 255, 255);
+	border-radius: 50px;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 30px;
+	gap: 1.5em;
+}
+
+nav li {
+	padding: 0 10px;
+}
+
+nav li:hover {
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	max-width: 1200px;
+	height: 150vh;
+	border: 2px solid red;
+}
+
+.roles {
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.roles img {
+	border-radius: 100%;
+	width: 40%;
+}
+
+@media only screen and (max-width: 1420px) {
+}
+
+@media only screen and (max-width: 1050px) {
+}
+
+@media only screen and (max-width: 840px) {
+}
