@@ -13,7 +13,6 @@ const Title = () => {
 	return (
 		<div className="roles">
 			<img src={myPic} alt="Netanel Mizrahi" width="700"></img>
-
 			<TypeAnimation
 				sequence={[
 					roles[0],
