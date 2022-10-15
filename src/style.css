@@ -1,6 +1,8 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	overflow-y: overlay;
+	scroll-snap-type: y mandatory;
 }
 
 *,
@@ -82,11 +84,11 @@ nav li:hover {
 
 .wrapper {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	max-width: 1200px;
-	height: 150vh;
+	/* height: 150vh; */
 	/* border: 2px solid red; */
 }
 
@@ -95,11 +97,28 @@ nav li:hover {
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 50%;
 }
 
 .roles img {
 	border-radius: 100%;
 	width: 40%;
+}
+
+.items {
+	height: 100vh;
+}
+
+.section {
+	/*jump screen*/
+	scroll-snap-align: start;
+}
+
+.items div {
+	height: 100vh;
+	text-align: center;
+	font-size: 5em;
 }
 
 @media only screen and (max-width: 1420px) {

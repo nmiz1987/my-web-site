@@ -11,7 +11,7 @@ const roles = [
 
 const Title = () => {
 	return (
-		<div className="roles">
+		<div className="roles section">
 			<img src={myPic} alt="Netanel Mizrahi" width="700"></img>
 			<TypeAnimation
 				sequence={[
