@@ -30,7 +30,7 @@ const About = () => {
 					<ul>
 						<li>HTML5</li>
 						<li>CSS3, Bootstrap, modern responsive techniques</li>
-						<li className="highlight2">JavaScrip</li>
+						<li className="highlight2">JavaScript</li>
 						<li className="highlight2">React.js</li>
 						<li>Redux</li>
 						<li className="highlight2">Node.js</li>
