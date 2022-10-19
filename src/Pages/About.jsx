@@ -1,5 +1,6 @@
 import React from "react";
 import myPic from "../img/profile-pic.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
 	return (
@@ -53,9 +54,13 @@ const About = () => {
 					If you believe I'd be a good fit for your team, feel free to go over
 					my resume and get in touch with me.
 					<br />
-					Please don't hesitate to get in touch with me through my social media
-					platforms or by filling out this form if you have any more questions
-					or simply want to ask me anything.
+					Please don't hesitate to get in touch with me through email at{" "}
+					<a href="mailto:nmiz1987@gmail.com">nmiz1987@gmail.com</a> or by
+					filling out this{" "}
+					<Link className="highlight2" to="/Contact">
+						form
+					</Link>{" "}
+					if you have any more questions or simply want to ask me anything.
 				</p>
 			</div>
 		</section>

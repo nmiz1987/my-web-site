@@ -23,12 +23,6 @@ const Project = ({
 			})}
 
 			<div className="links">
-				{/* {linkWebSite && (
-					<a href={linkWebSite} target="_blank">
-						<img src={svgLink} alt="Click to open website." />
-					</a>
-				)} */}
-
 				{linkWebSite && (
 					<a className="Link2Site" href={linkWebSite} target="_blank">
 						Open Website
