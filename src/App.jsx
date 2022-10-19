@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Go2Top from "./components/Go2Top";
 import MainPage from "./Pages/MainPage";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 				<Nav />
 				<Routes>
 					<Route path="/about" element={<About />} />
-					<Route path="/contact" element={<h1>contact</h1>} />
+					<Route path="/contact" element={<Contact />} />
 					<Route path="/" element={<MainPage />} />
 				</Routes>
 				<Go2Top />

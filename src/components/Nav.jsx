@@ -1,17 +1,35 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useRef } from "react";
 
 const Nav = () => {
+	const toggleButtonRef = useRef();
+	const navBarLinksRef = useRef();
+
+	function toggleMenu() {
+		navBarLinksRef.current.classList.toggle("active");
+	}
+
 	return (
-		<nav>
+		<nav className="navbar">
+			<button
+				onClick={toggleMenu}
+				ref={toggleButtonRef}
+				href="#"
+				className="toggle-button"
+			>
+				<span className="bar"></span>
+				<span className="bar"></span>
+				<span className="bar"></span>
+			</button>
 			<h2>
 				<strong>Netanel</strong> Mizrahi
 			</h2>
-			<ul>
+			<ul ref={navBarLinksRef}>
 				<li>
 					<Link to="/">Home</Link>
 				</li>
 				<li>
-					<a href="#projects">Portfolio</a>
+					<a href="/#projects">Portfolio</a>
 				</li>
 
 				<li>

@@ -10,6 +10,7 @@ html {
 	--color2: #00a6ff;
 	--color3: #00d6f6;
 	--color4: #68fbd0;
+	--color-background: #1f1f1f;
 }
 
 *,
@@ -32,7 +33,30 @@ body {
 		"Lucida Sans Unicode", Tahoma, Sans-Serif;
 	padding: 0;
 	margin: 0;
-	background-color: #1f1f1f;
+	background-color: var(--color-background);
+}
+
+.toggle-button {
+	cursor: pointer;
+	border: 0;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 55px;
+	height: 50px;
+	padding: 8px;
+	background-color: var(--color3);
+	border-radius: 5px;
+}
+
+.toggle-button .bar {
+	height: 5px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
 }
 
 .content {
@@ -69,6 +93,7 @@ nav {
 nav ul {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	flex-wrap: nowrap;
 	font-size: 1.3rem;
 	border: 2px solid rgb(160, 255, 255);
@@ -149,7 +174,9 @@ nav ul li a {
 .project {
 	border-top: 0.1px solid rgba(0, 214, 246, 0.3);
 	border-right: 3px solid rgba(0, 214, 246, 0.3);
-	background: radial-gradient(ellipse at bottom, #256376 0%, #030617 100%);
+	background: radial-gradient(ellipse at bottom, #256376 0%, #2b2b2b 100%);
+	/* background-image: linear-gradient(160deg, #6b6b6b 0%, #2b2b2b 100%); */
+
 	border-radius: 30px;
 	margin-bottom: 50px;
 }
@@ -195,6 +222,37 @@ nav ul li a {
 
 .project .links img:hover {
 	scale: 1.2;
+}
+
+.project .links {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.project .links .Link2Site {
+	text-decoration: none;
+	border: 1px solid peachpuff;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0;
+	color: peachpuff;
+	font-size: 1.5rem;
+}
+
+.project .links .Link2Site:hover {
+	animation-name: hoverButton;
+	animation-duration: 0.25s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes hoverButton {
+	to {
+		background-color: peachpuff;
+		color: var(--color-background);
+	}
 }
 
 .desc {
@@ -263,7 +321,7 @@ nav ul li a {
 }
 
 #about img {
-	width: 15%;
+	width: 200px;
 }
 
 #about a {
@@ -291,11 +349,215 @@ nav ul li a {
 	line-height: 1.5;
 }
 
-@media only screen and (max-width: 1420px) {
+/******* contact *******/
+
+.form-container {
+	margin-top: 50px;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	width: 80vw;
+	padding: 0 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@media only screen and (max-width: 1050px) {
+.form-container h1 {
+	width: inherit;
 }
 
-@media only screen and (max-width: 840px) {
+form {
+	margin-top: 40px;
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+form label {
+	margin-right: auto;
+}
+
+input,
+textarea {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: var(--color-background);
+	border: 1px solid var(--color4);
+	font-size: 1.2rem;
+	color: white;
+}
+
+input:focus,
+textarea:focus {
+	background-color: #545454;
+}
+
+form button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height: 60px;
+	background-color: var(--color-background);
+	color: var(--color4);
+	border-color: var(--color4);
+	font-size: 1.2rem;
+	margin: 0 auto;
+}
+
+form button:hover {
+	background-color: var(--color4);
+	color: black;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1550px) {
+	.wrapper {
+		width: 90vw;
+	}
+
+	.items div {
+		font-size: 5rem;
+		padding: auto;
+	}
+
+	.project-title {
+		font-size: clamp(4rem, 4.5vw, 5rem);
+	}
+
+	.project p {
+		width: 75vw;
+		margin: 0;
+		margin-bottom: 0.5rem;
+		padding: 0 30px;
+	}
+}
+
+@media only screen and (max-width: 1330px) {
+	#about {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-me {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-me p {
+		width: 80%;
+	}
+	.about-me .last-section {
+		width: 80%;
+	}
+
+	#about ul {
+		columns: 1;
+	}
+}
+@media only screen and (max-width: 780px) {
+	#projects-title {
+		font-size: 2.4rem;
+	}
+
+	.about-me p {
+		width: 90%;
+	}
+	.about-me .last-section {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 745px) {
+	nav {
+		margin-bottom: 20px;
+	}
+
+	nav ul {
+		gap: 1rem;
+	}
+
+	nav li {
+		padding: 0 6px;
+	}
+
+	.form-container {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 685px) {
+	.toggle-button {
+		display: flex;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav ul {
+		border-radius: 0;
+		align-items: flex-start;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0px;
+	}
+
+	nav ul li {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 7px 0;
+	}
+
+	nav li:hover {
+		border-radius: 0;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+
+	nav ul.active {
+		display: flex;
+		animation-name: showMenu;
+		animation-duration: 0.5s;
+		animation-timing-function: ease;
+		animation-iteration-count: 1;
+		animation-fill-mode: both;
+	}
+
+	@keyframes showMenu {
+		from {
+			scale: 0;
+		}
+		to {
+			scale: 1;
+		}
+	}
+
+	.form-container {
+		font-size: 1.5rem;
+		padding: 0 400px;
+	}
+
+	.form-container h1 {
+		width: inherit;
+	}
+
+	form {
+		margin-top: 40px;
+		width: 80vw;
+	}
 }

@@ -1,5 +1,5 @@
 import picArrowUp from "../img/arrowUp.png";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 const Go2Top = () => {
 	const buttonRef = useRef();
