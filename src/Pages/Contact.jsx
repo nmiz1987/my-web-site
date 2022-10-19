@@ -4,13 +4,30 @@ const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	// const [isSend, setIsSend] = useState(false);
 
 	async function sendMessage() {
-		// const res = await fetch(null);
-		// const json = await res.json();
-		setName("");
-		setEmail("");
-		setMessage("");
+		// if (isSend) {
+		// 	return;
+		// }
+		const res = await fetch(
+			"https://my-link-server-production.up.railway.app/messages/new",
+			{
+				method: "POST",
+				headers: { "Content-type": "application/json" },
+				body: JSON.stringify({
+					name: name,
+					email: email,
+					message: message,
+				}),
+			}
+		);
+		const data = await res.json();
+		console.log("New Message sent successfully: ", data);
+		// setName("");
+		// setEmail("");
+		// setMessage("");
+		// setIsSend(true);
 	}
 
 	return (
@@ -40,6 +57,7 @@ const Contact = () => {
 					className="focus"
 					id="email"
 					value={email}
+					type="email"
 					placeholder="Enter your email"
 					onChange={(e) => setEmail(e.target.value)}
 				/>
@@ -53,7 +71,7 @@ const Contact = () => {
 					placeholder="Enter your message..."
 					onChange={(e) => setMessage(e.target.value)}
 				/>
-				<button onClick={sendMessage}>Send your message</button>
+				<button>Send your message</button>
 			</form>
 		</div>
 	);

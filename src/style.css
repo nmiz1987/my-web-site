@@ -393,6 +393,7 @@ textarea {
 input:focus,
 textarea:focus {
 	background-color: #545454;
+	outline: 2px solid var(--color2);
 }
 
 form button {
@@ -413,6 +414,12 @@ form button:hover {
 	color: black;
 	cursor: pointer;
 	font-weight: bold;
+}
+
+#email:invalid {
+	background-color: ivory;
+	outline: 2px solid red;
+	color: red;
 }
 
 @media only screen and (max-width: 1550px) {
