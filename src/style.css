@@ -1,5 +1,7 @@
 html {
 	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+
 	scroll-behavior: smooth;
 	overflow-y: overlay;
 	/* scroll-snap-type: y mandatory; */
@@ -241,7 +243,8 @@ nav ul li a {
 	font-size: 23px;
 	font-family: "Lato", sans-serif;
 	padding: 0 30px;
-	margin: 0 30px;
+	margin: 50px 30px;
+	width: 90%;
 }
 
 #about .highlight1 {
@@ -251,9 +254,7 @@ nav ul li a {
 }
 
 #about .highlight2 {
-	font-weight: bold;
 	color: var(--color3);
-	font-size: 105%;
 }
 
 .about-me p {
@@ -282,7 +283,12 @@ nav ul li a {
 }
 
 #about ul li:hover {
-	background-color: rgb(104, 149, 255);
+	background-color: rgba(0, 214, 246, 0.2);
+}
+
+.about-me .last-section {
+	width: 70%;
+	line-height: 1.5;
 }
 
 @media only screen and (max-width: 1420px) {

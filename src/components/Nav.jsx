@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 const Nav = () => {
 	return (
 		<nav>
-			<h2>Netanel Mizrahi ©️</h2>
+			<h2>
+				<strong>Netanel</strong> Mizrahi
+			</h2>
 			<ul>
 				<li>
 					<Link to="/">Home</Link>

@@ -10,10 +10,10 @@ const About = () => {
 					Hi 👋,
 					<br /> my name is <span className="highlight1">Netanel Mizrahi.</span>
 				</p>
-				<p>I have BSc. in Software engineering and I ❤️ the Web!.</p>
+				<p>I have BSc. in Software engineering and I ❤️ the Web!</p>
 				<p>
 					<span id="self-learner">
-						I am a passionate and{" "}
+						I am passionate and a{" "}
 						<span className="highlight2">self-learner</span>.{" "}
 					</span>
 				</p>
@@ -43,7 +43,20 @@ const About = () => {
 						<li>And keeps learning every day...</li>
 					</ul>
 				</p>
-				<p>I like learning programming languages 😊</p>
+				<br />
+				<p className="last-section">
+					I'm always looking for new frontend challenges because I love design
+					and want to learn and develop.
+					<br />I enjoy working with others and am a good{" "}
+					<span className="highlight2">team player</span>.
+					<br />
+					If you believe I'd be a good fit for your team, feel free to go over
+					my resume and get in touch with me.
+					<br />
+					Please don't hesitate to get in touch with me through my social media
+					platforms or by filling out this form if you have any more questions
+					or simply want to ask me anything.
+				</p>
 			</div>
 		</section>
 	);
