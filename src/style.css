@@ -209,6 +209,7 @@ nav ul li a {
 	font-size: 1.4rem;
 	line-height: 1.75rem;
 	text-align: left;
+	overflow-wrap: break-word;
 }
 
 .project .links img {
@@ -438,9 +439,9 @@ form button:hover {
 
 	.project p {
 		width: 75vw;
-		margin: 0;
-		margin-bottom: 0.5rem;
-		padding: 0 30px;
+		/* margin: 0; */
+		/* margin-bottom: 0.5rem; */
+		padding: 0 3%;
 	}
 }
 
