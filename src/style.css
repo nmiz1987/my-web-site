@@ -189,7 +189,7 @@ nav ul li a {
 
 .project-title {
 	/* color: var(--color4); */
-	color: var(--color-project-title);
+	color: var(--color4);
 	font-size: clamp(3rem, 3.5vw, 4rem);
 
 	font-weight: bold;
