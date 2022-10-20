@@ -90,6 +90,12 @@ nav {
 	margin-bottom: 50px;
 }
 
+nav #brand-name {
+	text-decoration: none;
+	display: block;
+	color: inherit;
+}
+
 nav ul {
 	display: flex;
 	flex-direction: row;

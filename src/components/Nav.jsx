@@ -22,7 +22,9 @@ const Nav = () => {
 				<span className="bar"></span>
 			</button>
 			<h2>
-				<strong>Netanel</strong> Mizrahi
+				<Link to="/" id="brand-name">
+					<strong>Netanel</strong> Mizrahi
+				</Link>
 			</h2>
 			<ul ref={navBarLinksRef}>
 				<li>
