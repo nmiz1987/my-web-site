@@ -166,7 +166,7 @@ nav ul li a {
 }
 
 #projects-title {
-	color: var(--color2);
+	color: var(--color4);
 	text-align: center;
 	font-size: 3rem;
 	margin-bottom: 20px;
@@ -188,8 +188,7 @@ nav ul li a {
 }
 
 .project-title {
-	/* color: var(--color4); */
-	color: var(--color4);
+	color: var(--color2);
 	font-size: clamp(3rem, 3.5vw, 4rem);
 
 	font-weight: bold;
