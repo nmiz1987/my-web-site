@@ -30,7 +30,7 @@ const Contact = () => {
 			<h1>
 				Speak up!
 				<br />
-				Let's collaborate.
+				Let&apos;s collaborate.
 			</h1>
 			<form
 				onSubmit={(e) => {

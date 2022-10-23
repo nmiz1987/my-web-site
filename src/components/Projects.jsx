@@ -1,4 +1,4 @@
-import Project from "./Project";
+import Project from "./Project.jsx";
 import picZone from "../img/zone.jpg";
 import pic100fm from "../img/100fm.jpg";
 import picClock from "../img/clock.jpg";

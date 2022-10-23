@@ -31,7 +31,7 @@ const Go2Top = () => {
 
 	return (
 		<button ref={buttonRef} onClick={topFunction} title="Go to top" id="go2top">
-			<img src={picArrowUp} />
+			<img src={picArrowUp} alt="slide to the top" />
 		</button>
 	);
 };

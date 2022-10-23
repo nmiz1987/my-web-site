@@ -21,7 +21,7 @@ const About = () => {
 				<p>
 					I learned myself everything thanks to the{" "}
 					<a href="https://frontendmasters.com/" target="”_blank”">
-						frontendmasters
+						frontendMasters
 					</a>
 					.
 				</p>
@@ -46,14 +46,14 @@ const About = () => {
 				</p>
 				<br />
 				<p className="last-section">
-					I'm always looking for new frontend challenges because I love design
-					and want to learn and develop.
+					I&apos;m always looking for new frontend challenges because I love
+					design and want to learn and develop.
 					<br />I enjoy working with others and am a good team player.
 					<br />
-					If you believe I'd be a good fit for your team, feel free to go over
-					my resume and get in touch with me.
+					If you believe I&apos;d be a good fit for your team, feel free to go
+					over my resume and get in touch with me.
 					<br />
-					Please don't hesitate to get in touch with me through email at{" "}
+					Please don&apos;t hesitate to get in touch with me through email at{" "}
 					<a href="mailto:nmiz1987@gmail.com">nmiz1987@gmail.com</a> or by
 					filling out this{" "}
 					<Link className="highlight2" to="/Contact">

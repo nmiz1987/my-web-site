@@ -1,11 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/code-solid.svg";
-import Nav from "./components/Nav";
-import Go2Top from "./components/Go2Top";
-import MainPage from "./Pages/MainPage";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Nav from "./components/Nav.jsx";
+import Go2Top from "./components/Go2Top.jsx";
+import MainPage from "./Pages/MainPage.jsx";
+import About from "./Pages/About.jsx";
+import Contact from "./Pages/Contact.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (

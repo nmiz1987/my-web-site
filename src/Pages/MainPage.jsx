@@ -1,7 +1,7 @@
-import Title from "../components/Title";
+import Title from "../components/Title.jsx";
 import Lottie from "lottie-react";
 import arrowDown from "../assets/arrow-down.json";
-import Projects from "../components/Projects";
+import Projects from "../components/Projects.jsx";
 
 const MainPage = () => {
 	return (
