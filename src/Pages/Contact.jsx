@@ -1,9 +1,12 @@
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+
+	const notify = () => toast("Message sent 👌");
 
 	async function sendMessage() {
 		const res = await fetch(
@@ -20,6 +23,7 @@ const Contact = () => {
 		);
 		const data = await res.json();
 		console.log("New Message sent successfully: ", data);
+		notify();
 		setName("");
 		setEmail("");
 		setMessage("");
@@ -68,6 +72,7 @@ const Contact = () => {
 				/>
 				<button>Send your message</button>
 			</form>
+			<Toaster position="bottom-center" reverseOrder={false} />
 		</div>
 	);
 };
