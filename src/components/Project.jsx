@@ -6,13 +6,7 @@ const Project = ({ title, desc, pic, linkWebSite, linkGitHub }) => {
 			<h1 className="project-title">{title}</h1>
 			<img src={pic} alt={title} width="700"></img>
 
-			{desc.split("<br>").map((i, key) => {
-				return (
-					<p className="desc" key={key}>
-						{i}
-					</p>
-				);
-			})}
+			<p className="desc" dangerouslySetInnerHTML={{ __html: desc }}></p>
 
 			<div className="links">
 				{linkWebSite && (
