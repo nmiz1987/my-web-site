@@ -4,7 +4,7 @@ import myPic from "../img/profile-pic.png";
 const roles = [
 	"I'm a Web Developer.",
 	"I'm a FrontEnd Developer.",
-	"I'm a FullStack Web Developer.",
+	"I'm a Husband and a father of 2.",
 	"I'm a Python Developer.",
 ];
 
