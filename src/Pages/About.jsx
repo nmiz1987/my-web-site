@@ -36,7 +36,6 @@ const About = () => {
 						<li className="highlight2">Node.js</li>
 						<li>RESTful API</li>
 						<li>SQL, NO-SQL, MongoDB</li>
-						<li>jQuery</li>
 						<li className="highlight2">Python</li>
 						<li>Java</li>
 						<li>Linux</li>

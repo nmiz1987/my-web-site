@@ -10,7 +10,7 @@ const Contact = () => {
 
 	async function sendMessage() {
 		const res = await fetch(
-			"https://my-link-server-production.up.railway.app/messages/new",
+			"https://orange-red-jaguar-cuff.cyclic.app/messages/new",
 			{
 				method: "POST",
 				headers: { "Content-type": "application/json" },
