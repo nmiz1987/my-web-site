@@ -28,10 +28,11 @@ const About = () => {
 				<p>
 					I know the following languages/technologies:
 					<ul>
+						<li className="highlight2">React.js</li>
+						<li className="highlight2">React Native</li>
 						<li>HTML5</li>
 						<li>CSS3, Bootstrap, modern responsive techniques</li>
 						<li className="highlight2">JavaScript</li>
-						<li className="highlight2">React.js</li>
 						<li>Redux</li>
 						<li className="highlight2">Node.js</li>
 						<li>RESTful API</li>
